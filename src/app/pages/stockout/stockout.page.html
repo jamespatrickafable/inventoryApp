@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Truck</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+      <ion-item>
+        <ion-label position="floating">Truck Name</ion-label>
+        <ion-input [(ngModel)]="tname" type='text'></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Driver Name</ion-label>
+        <ion-input [(ngModel)]="dname" type='text'></ion-input>
+      </ion-item>
+      <br />
+        <center>
+            <ion-button type="submit" expand="full" fill="solid" color="success" (click)="insertDataToTruck()">ADD TRUCK</ion-button>
+        </center>
+      <br>
+    </ion-card>  
+</ion-content>

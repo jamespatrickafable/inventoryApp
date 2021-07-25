@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inventory In Truck</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col> Item Code</ion-col>
+      <ion-col> Item Name</ion-col>
+      <ion-col> Number of Stocks</ion-col>
+      <ion-col> Price</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of items">
+        <ion-col> {{item.id}}</ion-col>
+        <ion-col> {{item.item_name}}</ion-col>
+        <ion-col> {{item.item_stocks}}</ion-col>
+        <ion-col> {{item.item_price}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

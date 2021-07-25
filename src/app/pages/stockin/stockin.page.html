@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Stockin</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button
+          [text]="buttonText"
+          [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Item Code</ion-label>
+            <ion-input [(ngModel)]="code" type='number'></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Item Name</ion-label>
+            <ion-input [(ngModel)]="item_name" type='text'></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Stocks</ion-label>
+            <ion-input [(ngModel)]="item_stocks" type='number'></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Item Price</ion-label>
+            <ion-input [(ngModel)]="item_price" type='number'></ion-input>
+          </ion-item>
+          <br />
+            <center>
+                <ion-button type="submit" expand="full" fill="solid" color="success" (click)="insertDataToLumen()" >ADD ITEM</ion-button>
+            </center>
+          <br>
+        </ion-card>  
+        
+</ion-content>

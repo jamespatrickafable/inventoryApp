@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Register</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <center>
+    <ion-card class="base">
+    <center><h1>Register Warehouse</h1></center>
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Owner Name</ion-label>
+            <ion-input type="text" [(ngModel)]="ownername" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Address</ion-label>
+            <ion-input type="text" [(ngModel)]="address" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contact</ion-label>
+            <ion-input type="number" [(ngModel)]="contact" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type="email" [(ngModel)]="username" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="text" [(ngModel)]="password" required></ion-input>
+          </ion-item>
+          <br />
+            <center>
+                <ion-button expand="full" fill="solid" color="success" (click)="insertDataToRegister()">Register</ion-button>
+            </center>
+          <br>
+        </ion-card>
+        <br>
+      <br><br>
+    </ion-card>
+  </center>
+</ion-content>

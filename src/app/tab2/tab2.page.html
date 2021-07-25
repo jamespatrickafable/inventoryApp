@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+     
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,31 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Warehouse</ion-title>
     </ion-toolbar>
   </ion-header>
+  <br><br><br><br>
+  <center>
+    <ion-card class="base">
+    <center><h1>Login Warehouse</h1></center>
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type="text" [(ngModel)]="username" required></ion-input>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="text" [(ngModel)]="password" required></ion-input>
+          </ion-item>
+          <br />
+            <center>
+                <ion-button expand="full" fill="solid" color="success"  routerLink='log' routerDirection="forward">Login</ion-button>
+            </center>
+          <br>
+        </ion-card>
+        <br>
+      <br><br>
+    </ion-card>
+  </center>
 </ion-content>

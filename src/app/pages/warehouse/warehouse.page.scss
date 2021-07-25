@@ -1,0 +1,20 @@
+ion-card img:hover {
+    border: 3px solid red;
+  }
+  
+  ion-card {
+  float: left;
+  margin-left: 8%;
+  margin-top: 7%;
+  }
+  
+  ion-card img{
+  border: 1px solid #ccc;
+  width: 300px;
+  border-radius: 7%;
+  }
+  
+  ion-label{
+  font-size: 20px;
+  margin-bottom: 40px;
+  }
